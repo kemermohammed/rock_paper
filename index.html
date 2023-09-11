@@ -3,12 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
-    <button id="r" onclick= "fun(c,m)">Rock</button>
-    <button id = "p" onclick= "funn(p)">Paper</button>
-    <button id="s" onclick= "compchoice()">Scissor</button>
+    <h1>CALCULATOR</h1>
+    <h3>9/11/23</h3>
+    <div class="main">
+    <input type="text" id="dis" >
+    <div class="bt">
+    <div>
+    <input id="bt" type="button" value="7" onclick="dis.value += '7' ">
+    <input id="bt" type="button" value="8" onclick="dis.value += '8' ">
+    <input id="bt" type="button" value="9" onclick="dis.value += '9' ">  
+    <input id="bt" type="button" value="+" onclick="dis.value += '+' ">  
+    </div>
+    <div>
+        <input id="bt" type="button" value="4" onclick="dis.value += '4' ">
+        <input id="bt" type="button" value="5" onclick="dis.value += '5' ">
+        <input id="bt" type="button" value="6" onclick="dis.value += '6' ">  
+        <input id="bt" type="button" value="-" onclick="dis.value += '-' ">  
+        </div>
+    <div>
+    <input id="bt" type="button" value="1" onclick="dis.value += '1' ">
+        <input id="bt" type="button" value="2" onclick="dis.value += '2' ">
+        <input id="bt" type="button" value="3" onclick="dis.value += '3' ">  
+        <input id="bt" type="button" value="*" onclick="dis.value += '*' ">    
+     </div>
+     <div>
+        <input id="bt" type="button" value="0" onclick="dis.value += '0' ">
+            <input id="bt" type="button" value="." onclick="dis.value += '.' ">
+            <input id="bt" type="button" value="cr" onclick="dis.value += '' ">  
+            <input id="bt" type="button" value="=" onclick="dis.value = eval(dis.value)">    
+         </div>
+    </div>
+    </div>
      <script src="script.js"></script>
 </body>
 </html>
